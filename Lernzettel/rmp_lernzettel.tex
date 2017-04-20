@@ -1,5 +1,5 @@
 \documentclass[12pt,twoside,a4paper]{article}
-\usepackage[utf8]{inputenc} \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} \usepackage[T1]{fontenc} \usepackage{graphicx}
 \begin{document}
 
 Subtraktion von binären Zahlen
@@ -40,11 +40,15 @@ Nachkommastelle\\
 
 Sobald es sich wiederholt kann aufgehört werden.\\
 0, 2 = 0,0011\\
-10,2 \^= 1010,00110011 \approx 0,19921875\\
-\Longrightarrow Eine Abweichung von  -0,00078125\\
-
+10,2 \^= 1010,00110011 \approx 0,19921875
+\\
+\Longrightarrow Eine Abweichung von  -0,00078125
+\\
 \paragraph{Konvertierung von Fließkommazahlen Dez zu Bin}
+18,4_{10}
 
+1. 18_{10} in Dualzahl umrechen
+10010_{2}
 
 
 \paragraph{Die Subtraktion von Dualzahlen}
@@ -63,11 +67,18 @@ Dies addieren wir nun zu 14 also 00001110.
 
 Auch hier wäre die richtige Zahl eigentlich 00000101 Übertrag 1, da wir den Übertrag jedoch nicht speichern können, bleiben wir bei 00000101 was ja der Dezimalzahl 5 entspricht.
 
+\paragraph{Little-/Bigendian}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{big-endian_und_little-endian.jpg}
+\caption{A simple caption \label{overflow}}
+\end{figure}
+
 \paragraph{Assemblerbefehle}
 AREA MyCommonBlock, COMMON, ALIGN = 10 ; Read-Write-Data
-; MyCommonBlock bezeichnet die Anfangsadresse des Speicherblocks
-; COMMON: vom Linker mit Nullen initialisierter Speicherbereich
-; Alignment mit 2^{10} erzeugt eine Blockgrenze bzw. –anfang mit n * 1024
+MyCommonBlock bezeichnet die Anfangsadresse des Speicherblocks
+COMMON: vom Linker mit Nullen initialisierter Speicherbereich
+Alignment mit 2^{10} erzeugt eine Blockgrenze bzw. –anfang mit n * 1024
 
 mov r0, #0x21
 Lade #0x21 in Register R0:

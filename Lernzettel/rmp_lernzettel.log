@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.22)  20 APR 2017 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.22)  20 APR 2017 20:39
 entering extended mode
 **./rmp_lernzettel.tex
 (rmp_lernzettel.tex
@@ -341,7 +341,40 @@ Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2017/01/24 v2.0c Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) (rmp_lernzettel.aux)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(rmp_lernzettel.aux)
 \openout1 = `rmp_lernzettel.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -357,6 +390,64 @@ LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count88
+\scratchdimen=\dimen105
+\scratchbox=\box26
+\nofMPsegments=\count89
+\nofMParguments=\count90
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count91
+\MPscratchDim=\dimen106
+\MPnumerator=\count92
+\makeMPintoPDFobject=\count93
+\everyMPtoPDFconversion=\toks18
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
 Overfull \hbox (9.1594pt too wide) in paragraph at lines 22--23
  \T1/cmr/bx/n/12 Das Zweierkom-ple-ment[] \T1/cmr/m/n/12 Das Zweierkom-ple-ment
  entspricht dem Ein-erkom-
@@ -381,7 +472,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--40
 <inserted text> 
                 $
 l.43 10,2 \^= 1010,00110011 \approx
-                                    0,19921875\\
+                                    0,19921875
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -394,47 +485,112 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.45 
-     
+l.47 \paragraph
+               {Konvertierung von Fließkommazahlen Dez zu Bin}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--45
+Underfull \hbox (badness 10000) in paragraph at lines 41--47
 
  []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.48 18,4_
+          {10}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.49 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 1. 18_
+           {10} in Dualzahl umrechen
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<big-endian_und_little-endian.jpg, id=12, 443.6575pt x 597.23125pt>
+File: big-endian_und_little-endian.jpg Graphic file (type jpg)
+
+<use big-endian_und_little-endian.jpg>
+Package pdftex.def Info: big-endian_und_little-endian.jpg used on input line 73
+.
+(pdftex.def)             Requested size: 256.0748pt x 344.70845pt.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70 ; Alignment mit 2^
-                       {10} erzeugt eine Blockgrenze bzw. –anfang mit n*1024
+l.81 Alignment mit 2^
+                     {10} erzeugt eine Blockgrenze bzw. –anfang mit n * 1024
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 70.
+LaTeX Warning: Command \textendash invalid in math mode on input line 81.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.71 
+l.82 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[2] (rmp_lernzettel.aux) ) 
+[2 <./big-endian_und_little-endian.jpg>]
+! You can't use `macro parameter character #' in horizontal mode.
+l.83 mov r0, #
+              0x21
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.84 Lade #
+           0x21 in Register R0:
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.89 mov r1, #
+              -10
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[3] (rmp_lernzettel.aux) ) 
 Here is how much of TeX's memory you used:
- 739 strings out of 493333
- 6415 string characters out of 3139188
- 59498 words of memory out of 3000000
- 4323 multiletter control sequences out of 15000+200000
+ 2001 strings out of 493333
+ 25160 string characters out of 3139188
+ 84053 words of memory out of 3000000
+ 5521 multiletter control sequences out of 15000+200000
  8600 words of font info for 26 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,5n,19p,218b,119s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,5n,25p,244b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Thorben\AppData\Local\MiKTeX\2.9\fonts\pk\
 ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Thorben\AppData\Local\MiKTeX\2
 .9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Thorben\AppData\Lo
@@ -443,9 +599,9 @@ cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk><C:/Program Files
 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb>
-Output written on rmp_lernzettel.pdf (2 pages, 77011 bytes).
+Output written on rmp_lernzettel.pdf (3 pages, 120522 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
+ 145 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
