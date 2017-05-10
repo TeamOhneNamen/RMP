@@ -1,5 +1,27 @@
 \documentclass[12pt,twoside,a4paper]{article}
 \usepackage[utf8]{inputenc} \usepackage[T1]{fontenc} \usepackage{graphicx}
+
+\usepackage{listings}
+\lstloadlanguages{Matlab,C}
+\lstset{% general command to set parameter(s)
+basicstyle=\sffamily\footnotesize, % print whole listing small
+keywordstyle=\sffamily\footnotesize\bfseries, % ubold black keywords
+identifierstyle=, % nothing happens
+commentstyle=\sffamily\footnotesize\slshape, % green comments
+stringstyle=\sffamily\footnotesize, % typewriter type for strings
+showstringspaces=false, % no special string spaces
+%numbers=left,
+numberstyle=\sffamily\footnotesize,
+stepnumber=1,
+numbersep=10pt,
+showspaces=false,
+showtabs=false,
+%frame=lines,
+morecomment=[l]{\%},
+float=htbp,
+numberbychapter=true
+}
+\setlength\parindent{0pt} 
 \begin{document}
 
 Subtraktion von binären Zahlen
@@ -40,7 +62,7 @@ Nachkommastelle\\
 
 Sobald es sich wiederholt kann aufgehört werden.\\
 0, 2 = 0,0011\\
-10,2 \^= 1010,00110011 \approx 0,19921875
+10,2 $\^=$ 1010,00110011 $\approx$ 0,19921875
 \\
 \Longrightarrow Eine Abweichung von  -0,00078125
 \\
@@ -80,7 +102,8 @@ Auch hier wäre die richtige Zahl eigentlich 00000101 Übertrag 1, da wir den Ü
 \caption{A simple caption \label{overflow}}
 \end{figure}
 
-\paragraph{Assemblerbefehle}
+\section{Assemblerbefehle}
+\begin{lstlisting}
 AREA MyCommonBlock, COMMON, ALIGN = 10 ; Read-Write-Data
 MyCommonBlock bezeichnet die Anfangsadresse des Speicherblocks
 COMMON: vom Linker mit Nullen initialisierter Speicherbereich
@@ -90,10 +113,67 @@ mov r0, #0x21
 Lade #0x21 in Register R0:
 R0
 00000021
+\end{lstlisting} 
 
 \subparagraph{Angabe negativer Konstanten}
 mov r1, #-10
 
+\paragraph{Speicherreservierung}
+DCB  8 Bit
+DCW 16 Bit
+DCD 32 Bit
+
+\newpage
+\section*{Lösungen für Tests}
+
+\subsection*{Lösung für Test 2:}
+\subsection{}
+Aufgabe:\\
+Die \textbf{vorzeichenlose} Zahl in r0 soll durch 4 geteilt werden. Das Ergebnis soll in r1 stehen.\\
+Geben Sie den Befehl an:\\
+
+
+\paragraph*{Lösung:}\\
+
+\begin{lstlisting}
+MOV r0,r1,ASR #2
+\end{lstlisting}
+
+
+\paragraph*{Erklärung:}
+Eine Verschiebeoperation nach \textbf{links} um 1 Bit entspricht der \textbf{Multiplikation} mit 2 \\
+und eine Verschiebeoperation nach \textbf{rechts} um 1 Bit entspricht der \textbf{Division} mit 2. \\
+Warum \# 2 statt 4? \# 1 $\rightarrow$ x $\div$ 2; \# 2 $\rightarrow$ x $\div$ 2 $\div$ 2 $\rightarrow$ x $\div$ 4 
+
+
+\paragraph*{Nachschlagen:}
+Kapitel 8.5.5
+
+\subsection{}
+Aufgabe:\\
+Das Datenfeld Var1 beginne bei Adresse 0x2000. Welcher Wert (hex.) vsteht nach Ausführung des Befehls in r0?\\
+
+\begin{lstlisting}
+Var1 	DCB 	10, 'A', 0xA, '1'
+
+		ldr r0, =Var1
+\end{lstlisting}
+
+\paragraph*{Lösung}
+r0 = 0x2000
+
+\paragraph*{Erklärung:}
+Lade die Adresse von Var1 in r0. 
+
+
+\paragraph*{Nachschlagen:}
+Kapitel 7.5.3
+
+\subsection{}
+Das Datenfeld Tab beginne bei Adresse 0x2000. Geben Sie die Speicherinhalte (hex.) von Adresse 0x2000 - 0x2003 an?\\
+\begin{lstlisting}
+Var1 	DCB 	0x10, 'A', 10, '1'
+\end{lstlisting}
 
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.22)  20 APR 2017 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.22)  10 MAY 2017 18:20
 entering extended mode
 **./rmp_lernzettel.tex
 (rmp_lernzettel.tex
@@ -374,35 +374,66 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count88
+\lst@gtempboxa=\box26
+\lst@token=\toks17
+\lst@length=\count89
+\lst@currlwidth=\dimen105
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen106
+\lst@width=\dimen107
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen108
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box27
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
 (rmp_lernzettel.aux)
 \openout1 = `rmp_lernzettel.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count88
-\scratchdimen=\dimen105
-\scratchbox=\box26
-\nofMPsegments=\count89
-\nofMParguments=\count90
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count91
-\MPscratchDim=\dimen106
-\MPnumerator=\count92
-\makeMPintoPDFobject=\count93
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count96
+\scratchdimen=\dimen109
+\scratchbox=\box28
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen110
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks19
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -448,57 +479,87 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-Overfull \hbox (9.1594pt too wide) in paragraph at lines 22--23
+\c@lstlisting=\count102
+
+Overfull \hbox (7.07526pt too wide) in paragraph at lines 31--34
+[]\T1/cmr/m/n/12 Das Ein-erkom-ple-ment Das Zweierkom-ple-ment Die Sub-trak-tio
+n von Du-alzahlen 
+ []
+
+
+Overfull \hbox (9.1594pt too wide) in paragraph at lines 44--45
  \T1/cmr/bx/n/12 Das Zweierkom-ple-ment[] \T1/cmr/m/n/12 Das Zweierkom-ple-ment
  entspricht dem Ein-erkom-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--40
+Underfull \hbox (badness 10000) in paragraph at lines 57--62
 
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 65.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 65.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 65.
+
+LaTeX Warning: Command \^ invalid in math mode on input line 65.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.65 10,2 $\^=
+              $ 1010,00110011 $\approx$ 0,19921875
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.65 10,2 $\^=
+              $ 1010,00110011 $\approx$ 0,19921875
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.43 10,2 \^= 1010,00110011 \approx
-                                    0,19921875
+l.67 \Longrightarrow
+                     Eine Abweichung von  -0,00078125
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 43.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 43.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 43.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.47 \paragraph
+l.69 \paragraph
                {Konvertierung von FlieÃŸkommazahlen Dez zu Bin}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--47
+Underfull \hbox (badness 10000) in paragraph at lines 63--69
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.48 18,4_
+l.70 18,4_
           {10}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -506,7 +567,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.49 
+l.71 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -518,7 +579,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51 \item {
+l.73 \item {
             18_{10}  \^= 10010_{2}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -526,18 +587,18 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.51 \item {18_
+l.73 \item {18_
                {10}  \^= 10010_{2}}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 51.
+LaTeX Warning: Command \^ invalid in math mode on input line 73.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.51 \item {18_{10}  \^=
+l.73 \item {18_{10}  \^=
                          10010_{2}}
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -545,7 +606,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.51 \item {18_{10}  \^=
+l.73 \item {18_{10}  \^=
                          10010_{2}}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -553,7 +614,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! Extra }, or forgotten $.
-l.51 \item {18_{10}  \^= 10010_{2}}
+l.73 \item {18_{10}  \^= 10010_{2}}
                                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -568,7 +629,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \item
+l.74 \item
            {0,4_{10} \^= 0,011_{2}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -580,7 +641,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \item {
+l.74 \item {
             0,4_{10} \^= 0,011_{2}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -592,7 +653,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \item {
+l.74 \item {
             0,4_{10} \^= 0,011_{2}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -604,18 +665,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \item {
+l.74 \item {
             0,4_{10} \^= 0,011_{2}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 52.
+LaTeX Warning: Command \^ invalid in math mode on input line 74.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.52 \item {0,4_{10} \^=
+l.74 \item {0,4_{10} \^=
                          0,011_{2}}
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -623,7 +684,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.52 \item {0,4_{10} \^=
+l.74 \item {0,4_{10} \^=
                          0,011_{2}}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -634,7 +695,7 @@ Runaway argument?
 ! Paragraph ended before \end was complete.
 <to be read again> 
                    \par 
-l.54 
+l.76 
      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -643,13 +704,19 @@ My plan is to forget the whole thing and hope for the best.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.54 
+l.76 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 Missing character: There is no è in font cmex10!
 Missing character: There is no è in font cmex10!
+
+Overfull \hbox (10.42947pt too wide) in paragraph at lines 86--90
+[]\T1/cmr/m/n/12 9 ist im Du-al-sys-tem 00001001. Das Ein-erkom-ple-ment zu 000
+01001 ist 11110110.
+ []
+
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -657,78 +724,128 @@ Missing character: There is no è in font cmex10!
 File: big-endian_und_little-endian.jpg Graphic file (type jpg)
 
 <use big-endian_und_little-endian.jpg>
-Package pdftex.def Info: big-endian_und_little-endian.jpg used on input line 79
-.
+Package pdftex.def Info: big-endian_und_little-endian.jpg used on input line 10
+1.
 (pdftex.def)             Requested size: 256.0748pt x 344.70845pt.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.87 Alignment mit 2^
-                     {10} erzeugt eine Blockgrenze bzw. â€“anfang mit n * 1024
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 106.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 87.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 107.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 107.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.88 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+
+! Package inputenc Error: Unicode char â\lst@FillFixed@\lst@EC€ (U+207C0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 ... erzeugt eine Blockgrenze bzw. â€“anfang 
+                                                  mit n * 1024
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 ... erzeugt eine Blockgrenze bzw. â€“anfang 
+                                                  mit n * 1024
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 110
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 110.
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 110.
+
+
+Overfull \hbox (47.89641pt too wide) in paragraph at lines 110--112
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
 [2 <./big-endian_und_little-endian.jpg>]
 ! You can't use `macro parameter character #' in horizontal mode.
-l.89 mov r0, #
-              0x21
+l.119 mov r1, #
+               -10
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-! You can't use `macro parameter character #' in horizontal mode.
-l.90 Lade #
-           0x21 in Register R0:
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
 
-! You can't use `macro parameter character #' in horizontal mode.
-l.95 mov r1, #
-              -10
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+ []
 
-[3] (rmp_lernzettel.aux) )
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+[4] [5] (rmp_lernzettel.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 51 ({)
+### simple group (level 1) entered at line 73 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2001 strings out of 493333
- 25160 string characters out of 3139188
- 84053 words of memory out of 3000000
- 5521 multiletter control sequences out of 15000+200000
- 8600 words of font info for 26 fonts, out of 3000000 for 9000
+ 3691 strings out of 493333
+ 47880 string characters out of 3139188
+ 130179 words of memory out of 3000000
+ 7181 multiletter control sequences out of 15000+200000
+ 13982 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,5n,25p,244b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,5n,36p,242b,1607s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Thorben\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecti1200.pk> <C:\Users\Thorben\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Thorben\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb>
-Output written on rmp_lernzettel.pdf (3 pages, 120625 bytes).
+appen\ec\dpi600\ecbx1440.pk> <C:\Users\Thorben\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\jknappen\ec\dpi600\ecss1000.pk> <C:\Users\Thorben\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Thorben\AppData\
+Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Thor
+ben\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C
+:\Users\Thorben\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecr
+m1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on rmp_lernzettel.pdf (5 pages, 154926 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
+ 260 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
