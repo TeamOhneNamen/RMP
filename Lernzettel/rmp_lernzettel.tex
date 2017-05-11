@@ -200,11 +200,11 @@ Geben Sie die Assemblerbefehle an, um das \underline{erste Datenwort} des Feldes
 \paragraph*{Lösung:}
 \begin{lstlisting}
 ldr r0, =WortFeld ; Arraystartadresse laden 
-ldr r1, [r0] 
+ldr r1, [r0] ; Erstes Element des Arrays
 \end{lstlisting}
 \paragraph*{Erklärung:}
-Warum nicht MOV?\\
-MOV kopiert nur ein Datenwort Syntax: MOV <wohin>, <woher,was> $\rightarrow$ Wir haben hier ein Datenfeld, daher unbrauchbar\\
+Warum nicht mov?\\
+mov kopiert nur ein Datenwort Syntax: MOV <wohin>, <woher,was> $\rightarrow$ Wir haben hier ein Datenfeld, daher unbrauchbar\\
 Nachschlagen von MOV: Kapitel 6.9.3\\
 \paragraph*{Nachschlagen:}
 Kapitel 7.5.3
@@ -214,7 +214,7 @@ Kapitel 7.7.3
 \subsection{}
 Was steht in r0 nach folgendem Befehl (hex.)?
 \begin{lstlisting}
-ldr r0, ==x1234ABCD
+ldr r0, =0x1234ABCD
 \end{lstlisting}
 
 
