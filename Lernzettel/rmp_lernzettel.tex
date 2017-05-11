@@ -214,15 +214,20 @@ Kapitel 7.7.3
 \subsection{}
 Was steht in r0 nach folgendem Befehl (hex.)?
 \begin{lstlisting}
-ldr r0, =0x1234ABCD
+ldr 		r0, =0x1234ABCD
 \end{lstlisting}
 
 
 \paragraph*{Lösung:}
+r0 = 0x1234ABCD
 
-\paragraph*{Erklärung:}
+\paragraph*{Erklärung:} 
+Wenn nach '=' ein Hexwert kommt dann speichere den Wert. Wenn Variable, dann speichere die Adresse.\\
+
 
 \paragraph*{Nachschlagen:}
+http://www.keil.com/support/man/docs/armasm/armasm_dom1361289875065.htm\\
+HIER
 
 \subsection{}
 In welchem Wertebereich muss r0 liegen, damit ein Sprung nach LOOP erfolgt? (dezimal oder hex.)
