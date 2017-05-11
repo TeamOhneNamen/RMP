@@ -102,7 +102,7 @@ Auch hier wäre die richtige Zahl eigentlich 00000101 Übertrag 1, da wir den Ü
 \caption{A simple caption \label{overflow}}
 \end{figure}
 
-\section{Assemblerbefehle}
+\section*{Assemblerbefehle}
 \begin{lstlisting}
 AREA MyCommonBlock, COMMON, ALIGN = 10 ; Read-Write-Data
 MyCommonBlock bezeichnet die Anfangsadresse des Speicherblocks
@@ -125,8 +125,8 @@ DCD 32 Bit
 
 \newpage
 \section*{Lösungen für Tests}
-
-\subsection*{Lösung für Test 2:}
+\section{Lösung für Test 1:}
+\section{Lösung für Test 2:}
 \subsection{}
 Aufgabe:\\
 Die \textbf{vorzeichenlose} Zahl in r0 soll durch 4 geteilt werden. Das Ergebnis soll in r1 stehen.\\
@@ -170,10 +170,85 @@ Lade die Adresse von Var1 in r0.
 Kapitel 7.5.3
 
 \subsection{}
+????????????????\\
 Das Datenfeld Tab beginne bei Adresse 0x2000. Geben Sie die Speicherinhalte (hex.) von Adresse 0x2000 - 0x2003 an?\\
 \begin{lstlisting}
 Var1 	DCB 	0x10, 'A', 10, '1'
 \end{lstlisting}
+
+\paragraph*{Lösung}
+\\
+0x2000: 10 41 A0 31\\
+oder???\\
+0x2000: 10 41 A 31 \\
+oder???\\
+0x2000: 41 31 A 10 \\
+
+\paragraph*{Erklärung:}
+\\
+0x10 $\rightarrow$ Hexadezimal $\rightarrow$ 10\\
+'A' $\rightarrow$ ASCII $\rightarrow$ 41\\
+10 $\rightarrow$ Hexadezimal $\rightarrow$ A\\
+'1' $\rightarrow$ ASCII $\rightarrow$ 41\\
+
+\paragraph*{Nachschlagen:}
+Kapitel 7.4.3 Folie 18
+
+\subsection{}
+Folgendes Datenfeld sei gegeben:
+\begin{lstlisting}
+Var1 	DCD 	0x10, 0xAA12
+\end{lstlisting}
+Geben Sie die Assemblerbefehle an, um das \underline{erste Datenwort} des Feldes Var1 nach r1 zu kopieren
+
+\paragraph*{Lösung:}
+
+\paragraph*{Erklärung:}
+
+\paragraph*{Nachschlagen:}
+
+\subsection{}
+Was steht in r0 nach folgendem Befehl (hex.)?
+\begin{lstlisting}
+ldr r0, ==x1234ABCD
+\end{lstlisting}
+
+
+\paragraph*{Lösung:}
+
+\paragraph*{Erklärung:}
+
+\paragraph*{Nachschlagen:}
+
+\subsection{}
+In welchem Wertebereich muss r0 liegen, damit ein Sprung nach LOOP erfolgt? (dezimal oder hex.)
+\begin{lstlisting}
+mov		r1, #-15
+cmp		r0, r1
+bge		LOOP	;if greater or equal
+\end{lstlisting}
+
+
+\paragraph*{Lösung:}
+
+\paragraph*{Erklärung:}
+
+\paragraph*{Nachschlagen:}
+
+\subsection{}
+Was steht in r0 nach folgender Befehlssequenz (hex.)?
+\begin{lstlisting}
+ldr		r1, =0xFFFFFF87
+mov		r0, #0x78
+and		r0, r1
+\end{lstlisting}
+
+
+\paragraph*{Lösung:}
+
+\paragraph*{Erklärung:}
+
+\paragraph*{Nachschlagen:}
 
 
 \end{document}
