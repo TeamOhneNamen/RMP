@@ -275,14 +275,20 @@ mov		r0, #0x78
 and		r0, r1
 \end{lstlisting}
 
-
-
-
 \paragraph*{Lösung:}
 
+\begin{lstlisting}
+r1 1111 1111 1111 1111 1111 1111 1000 0111
+r0 0000 0000 0000 0000 0000 0000 0111 1000
+------------------------------------------
+r0 0000 0000 0000 0000 0000 0000 0000 0000
+\end{lstlisting}
+
 \paragraph*{Erklärung:}
+logisches UND nur wenn gleiche Werte in r1 und r0 stehen $\rightarrow$ 1
 
 \paragraph*{Nachschlagen:}
+Kapitel 8.4.3
 
 
 \end{document}
