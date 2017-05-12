@@ -74,7 +74,7 @@ Sobald es sich wiederholt kann aufgehört werden.\\
 \item {0,4_{10} \^= 0,011_{2}}
 \end
 
-\paragraph{mov vs. ldr}
+\section{mov vs. ldr}
 \begin{center}
   \begin{tabular}{ | l | c | p |}
     \hline
@@ -243,6 +243,48 @@ ldrh	r1, [r0]
 
 
 \section{Lösung für Test 2:}
+\subsection{}
+\begin{lstlisting}
+Bytefeld 	DCB 	11,'B', 0xB, 0b01000010
+\end{lstlisting}
+
+a)
+\begin{lstlisting}
+Bytefeld 	0B, 42, 11, 42
+\end{lstlisting}
+ 
+b)
+\begin{lstlisting}
+ldr r1, =Bytefeld
+ldrb r0, r1 
+\end{lstlisting} 
+ 
+c)
+\begin{lstlisting}
+0x11, B
+\end{lstlisting} 
+
+\subsection{}
+\begin{lstlisting}
+ALIGN 4
+mov r0, 0xAB
+\end{lstlisting} 
+
+\subsection{}
+\begin{lstlisting}
+ldr r0, 0x1256ABCD
+\end{lstlisting} 
+
+\subsection{}
+\begin{lstlisting}
+bgt
+\end{lstlisting} 
+
+\subsection{}
+\begin{lstlisting}
+bgt
+\end{lstlisting} 
+ 
 \subsection{}
 Aufgabe:\\
 Die \textbf{vorzeichenlose} Zahl in r0 soll durch 4 geteilt werden. Das Ergebnis soll in r1 stehen.\\

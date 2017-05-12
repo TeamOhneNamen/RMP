@@ -1,0 +1,98 @@
+;******************** (C) COPYRIGHT HAW-Hamburg ********************************
+;* File Name          : main.s
+;* Author             : Alfred Lohmann
+;* Author             : Tobias Jaehnichen	
+;* Version            : V2.0
+;* Date               : 23.04.2017
+;* Description        : This is a simple main.
+;					  : The output is send to UART 1. Open Serial Window when 
+;					  : when debugging. Select UART #1 in Serial Window selection.
+;					  :
+;					  : Replace this main with yours.
+;
+;*******************************************************************************
+
+	EXTERN Init_TI_Board		; Initialize the serial line
+	EXTERN ADC3_CH7_DMA_Config  ; Initialize the ADC
+	;EXTERN	initHW				; Init Timer
+	EXTERN	puts				; C output function
+	EXTERN	TFT_puts			; TFT output function
+	EXTERN  TFT_cls				; TFT clear function
+	EXTERN  TFT_gotoxy      	; TFT goto x y function  
+	EXTERN  Delay				; Delay (ms) function
+	EXTERN GPIO_G_SET			; Set output-LEDs
+	EXTERN GPIO_G_CLR			; Clear output-LEDs
+	EXTERN GPIO_G_PIN			; Output-LEDs status
+	EXTERN GPIO_E_PIN			; Button status
+	EXTERN ADC3_DR				; ADC Value (ADC3_CH7_DMA_Config has to be called before)
+
+;********************************************
+; Data section, aligned on 4-byte boundery
+;********************************************
+
+	AREA MyData, DATA, align = 4
+
+DataList DCD 35, -1, 13, -4096, 511, 101, -3, -5, 0, 65, -4096, 511, 0x7fffffff, 0x80000000
+DataListEnd DCD 0
+
+	GLOBAL DataList
+	GLOBAL DataListEnd 
+
+
+;********************************************
+; Code section, aligned on 8-byte boundery
+;********************************************
+
+	AREA |.text|, CODE, READONLY, ALIGN = 3
+
+;--------------------------------------------
+; main subroutine
+;--------------------------------------------
+	EXPORT main [CODE]
+	
+main	PROC
+
+	mov r0, #1								;Getauscht <- Ja 
+	ldr r9, =DataListEnd-4
+	
+while_01			cmp	r0, #1				;while Getauscht == Ja
+											;do
+					bne endwhile_01			;end
+do_01			
+					mov r0, #0				;Getauscht <- Nein 
+					ldr r3, =DataList		;Zeiger auf den ersten Wert setzen
+					
+while_02 			cmp r3, r9				;Zeiger zeigt nicht auf den letzten Wert
+					bhs endwhile_02			; aktueller Zeiger >= folgender Zeiger -> ende
+do_02
+					
+					ldr r4, [r3], #4		
+					ldr r5, [r3]
+								
+if_01 				cmp r4, r5				;aktueller Wert > folgender Wert 
+					ble else_01				;else
+
+then_01
+					str r4, [r3], #-4		;Tabelleneinträge tauschen
+					str r5, [r3], #4			;Tabelleneinträge tauschen
+					mov r0, #1				;Getauscht <- Ja 
+									;Zeiger auf den folgenden Eintrag setzen
+					b while_02
+						
+else_01
+						
+					b while_02					
+						
+endif_01
+
+endwhile_02
+					b while_01
+endwhile_01		
+
+		
+forever	b	forever		; nowhere to retun if main ends		
+		ENDP
+	
+		ALIGN
+       
+		END
