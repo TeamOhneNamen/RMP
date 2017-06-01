@@ -57,7 +57,7 @@ Stop_Text    	DCB     "Stopped\0"
 ;--------------------------------------------
 			GLOBAL mainASM
 			
-	
+
 ;---------------------------------------------------
 ;--- Testet ob die S0 Taste gedrueckt wurde
 ;--- in:  void
@@ -67,18 +67,40 @@ Stop_Text    	DCB     "Stopped\0"
 ;---------------------------------------------------
 testIfPushButtonPressed
 
-            push {     }			;gerade Anzahl von Registern!	           
+            push {R1, R2, R3, R4}			;gerade Anzahl von Registern!	           
 			
 			mov R0, #0x00			;default Wert
 			ldr R3, =GPIO_E_PIN		;Tasten lesen
 			ldr R4, [R3]
 		 	and R4, #0x01			;S0 maskieren --> S7!
-		    cmp						;S0 testen    --> S7!
-			...						;Achtung: invertierte Logik:
-			...						;Taster gedrückt -> Pin ist 0
-			...						;achten Sie mal auf die zum Taster gehörende LED
-			...
-			pop {     }           
+		    cmp	R3, R4				;S0 testen    --> S7!
+			mov R0, #0x01				;Achtung: invertierte Logik:
+									;Taster gedrückt -> Pin ist 0
+			pop {R1, R2, R3, R4}           
+			bx   LR
+	
+	
+
+;---------------------------------------------------
+;--- Testet ob die S0 Taste gedrueckt wurde
+;--- in:  void
+;--- out: R0 = 0  S0 Taste wurde nicht gedrueckt
+;--- out: R0 = 1  S0 Taste wurde gedrueckt
+;!!!! für Aufgabe 3 nach S7 ändern!!!!
+;---------------------------------------------------
+waitTillPushButtonPressed
+
+            push {R1, R2, R3, R4}			;gerade Anzahl von Registern!	           
+			
+			mov R0, #0x00			;default Wert
+			ldr R3, =GPIO_E_PIN		;Tasten lesen
+			ldr R4, [R3]
+		 	and R4, #0x01			;S0 maskieren --> S7!
+		    cmp	R3, R4				;S0 testen    --> S7!
+			beq testIfPushButtonPressed 
+			mov R0, #0x01				;Achtung: invertierte Logik:
+									;Taster gedrückt -> Pin ist 0
+			pop {R1, R2, R3, R4}           
 			bx   LR
 	
 	
@@ -88,19 +110,20 @@ testIfPushButtonPressed
 ;--- out: void
 ;---------------------------------------------------	
 outputLEDBar
-            push {      }			;gerade Anzahl von Registern!	
+            push {R1, R2, R3, R4}			;gerade Anzahl von Registern!	
 		  
 			ldr  R3, =GPIO_G_CLR	;alle LEDs loeschen
 			mov  R4, #0xffff
 			strh R4, [R3]
 			
-			...						;LED Muster erzeugen
-		    ...
+			mov 	R2, #1						;LED Muster erzeugen
+		    mov		R3, R2, LSL R0					; (1 << Balkenlänge)
+			SUB		R3, #1							; -1
 		
 		    ldr  R3, =GPIO_G_SET	;LEDs anzeigen
 		    strh R4, [R3]
 			
-		    pop  {      }
+		    pop  {R1, R2, R3, R4}
 			bx   LR
 		
 ;---------------------------------------------------
@@ -110,19 +133,19 @@ outputLEDBar
 ;--- out: R0 = 1 Sie leuchten alle
 ;---------------------------------------------------			
 LEDBarEndReached
-			push {      }		  ;gerade Anzahl von Registern!	
+			push {R1, R2, R3, R4}		  ;gerade Anzahl von Registern!	
 			
 			mov R0, #0x01         ;default Wert
 			ldr R3, =GPIO_G_PIN   ;LEDs lesen
 			ldr R4, [R3]
 			ldr R5, =0xffff
 		 	and R4, R5            ;LEDs maskieren 
-		    cmp 				  ;LEDs testen
+		    cmp 			;LEDs testen
 
 			...
 			...
 			
-			pop {      }
+			pop {R1, R2, R3, R4}
 			bx   LR
 			
 ;---------------------------------------------------
@@ -131,11 +154,11 @@ LEDBarEndReached
 ;--- out: void
 ;---------------------------------------------------			
 SafeDelay
-			push {      }		  ;gerade Anzahl von Registern!
+			push {R1, R2, R3, R4}		  ;gerade Anzahl von Registern!
 
             bl    Delay
 
-			pop  {      }
+			pop  {R1, R2, R3, R4}
 			bx    LR
 
 ;---------------------------------------------------
@@ -144,11 +167,11 @@ SafeDelay
 ;--- out: void
 ;---------------------------------------------------			
 SafeTFT_cls
-			push {      }		  ;gerade Anzahl von Registern!
+			push {R1, R2, R3, R4}		  ;gerade Anzahl von Registern!
 
             bl    TFT_cls
 
-			pop  {      }
+			pop  {R1, R2, R3, R4}
 			bx    LR
 
 ;---------------------------------------------------
@@ -158,11 +181,11 @@ SafeTFT_cls
 ;--- out: void
 ;---------------------------------------------------			
 SafeTFT_gotoxy
-			push {      }		  ;gerade Anzahl von Registern!
+			push {R1, R2, R3, R4}		  ;gerade Anzahl von Registern!
 
             bl    TFT_gotoxy
 
-			pop  {      }
+			pop  {R1, R2, R3, R4}
 			bx    LR
 
 ;---------------------------------------------------
@@ -171,11 +194,11 @@ SafeTFT_gotoxy
 ;--- out: void
 ;---------------------------------------------------			
 SafeTFT_puts
-			push {      }		  ;gerade Anzahl von Registern!
+			push {R1, R2, R3, R4}		  ;gerade Anzahl von Registern!
 
             bl    TFT_puts
 
-			pop  {      }
+			pop  {R1, R2, R3, R4}
 			bx    LR
 
 ;---------------------------------------------------
@@ -186,7 +209,7 @@ SafeTFT_puts
 ;--- out: void
 ;---------------------------------------------------	
 SafeTFT
-            push {      }		  			;gerade Anzahl von Registern!
+            push {R1, R2, R3, R4}		  			;gerade Anzahl von Registern!
 			
 			mov R4, R0						;Adresse des Strings sichern	
             bl  SafeTFT_cls					;TFT loeschen
@@ -196,30 +219,69 @@ SafeTFT
 			mov R0, R4						;Text anzeigen
 			bl	SafeTFT_puts
 			
-			pop  {      }
+			pop  {R1, R2, R3, R4}
 			bx    LR
 			
 			
+while0		cmp R0, #15
+			bls do0
+			
+do0			
+			mov R4, R0 
+			b testIfPushButtonPressed
+			b if0
+
+else0
+			mov  R1, #20					;20ms warten
+			bl   SafeDelay
+			mov R0, R4
+			bl outputLEDBar
+			b while0
+			
+			
+			
+			
+if0			cmp R1, #0x01
+			beq endwhile0
+			b else0
+			
+
+
+endwhile0
 ;-------------------------------------------------------------------------------------------------	
 mainASM		PROC
 ;Dies ist die Hauptaufgabe; nur 3 Codeschnipsel für die Anwendung der Bibliothek
-			...
-			...
+			
 								
 			ldr R0, =Start_Text				;Starttext anzeigen
 			mov R1, #2
 			mov R2, #7
 			bl	SafeTFT
-			...
-			...
+			
+			bl waitTillPushButtonPressed
+			
 			
 			mov R0, #3000					;3s warten
 			bl  SafeDelay
 			
+			ldr R0, =Achtung_Text			;Achtung_Text anzeigen
+			mov R1, #2
+			mov R2, #7
+			bl	SafeTFT
 			
+			mov R0, #0
+			b while0
 			
-			mov  R0, #20					;20ms warten
-			bl   SafeDelay
+			ldr R0, =Stop_Text			;Achtung_Text anzeigen
+			mov R1, #2
+			mov R2, #7
+			bl	SafeTFT
+			
+			mov R0, #3000					;3s warten
+			bl  SafeDelay
+			
+			b mainASM
+			
 		    	
 
 		
