@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.22)  1 JUN 2017 11:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.22)  1 JUN 2017 11:24
 entering extended mode
 **./test1.tex
 (test1.tex
@@ -1069,7 +1069,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 61--62
 
 ! Undefined control sequence.
 l.63 \paragraph
-               {Lösung}\\
+               {Lösung}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1084,7 +1084,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.63 \paragraph{L
-                 ösung}\\
+                 ösung}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1095,6 +1095,19 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
+
+! LaTeX Error: Environment lstlisting undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \begin{lstlisting}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 Missing character: There is no - in font nullfont!
 Missing character: There is no 9 in font nullfont!
 Missing character: There is no 7 in font nullfont!
@@ -1136,13 +1149,26 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 63--66
-[] 
+! LaTeX Error: \begin{document} ended by \end{lstlisting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \end{lstlisting}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 63--68
+[]
  []
 
 ! Undefined control sequence.
-l.67 \paragraph
-               {Erklärung}\\
+l.70 \paragraph
+               {Erklärung}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1156,8 +1182,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67 \paragraph{E
-                 rklärung}\\
+l.70 \paragraph{E
+                 rklärung}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1191,8 +1217,8 @@ Missing character: There is no - in font nullfont!
 Missing character: There is no 9 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 67--69
-[] 
+Overfull \hbox (20.0pt too wide) in paragraph at lines 70--72
+[]
  []
 
 
@@ -1202,7 +1228,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70 $
+l.73 $
       \rightarrow$ Zweierkompliment = Binär invertieren + 0000 0001
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1251,12 +1277,12 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 
-Overfull \hbox (30.00002pt too wide) in paragraph at lines 70--71
+Overfull \hbox (30.00002pt too wide) in paragraph at lines 73--74
 []$\OMS/cmsy/m/n/10 !$
  []
 
 ! Undefined control sequence.
-l.72 \subsection
+l.75 \subsection
                 {}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1271,7 +1297,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 W
+l.77 W
       oran erkennt man bei der Subtraktion zweier Vorzeichenbehafteter Zahle...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1376,12 +1402,12 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no ? in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 74--75
+Overfull \hbox (20.0pt too wide) in paragraph at lines 77--78
 []
  []
 
 ! Undefined control sequence.
-l.76 \paragraph
+l.79 \paragraph
                {Lösung}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1396,7 +1422,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 \paragraph{L
+l.79 \paragraph{L
                  ösung}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1440,22 +1466,22 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 76--81
+Overfull \hbox (20.0pt too wide) in paragraph at lines 79--83
 [] 
  []
 
 
-Overfull \hbox (10.00002pt too wide) in paragraph at lines 76--81
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 79--83
 \OMS/cmsy/m/n/10 !$ 
  []
 
 
-Overfull \hbox (10.00002pt too wide) in paragraph at lines 76--81
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 79--83
 \OMS/cmsy/m/n/10 !$
  []
 
 ! Undefined control sequence.
-l.82 \paragraph
+l.84 \paragraph
                {Erklärung}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1470,7 +1496,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \paragraph{E
+l.84 \paragraph{E
                  rklärung}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1490,7 +1516,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.84 \subsection
+l.86 \subsection
                 {}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1514,12 +1540,12 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 82--86
+Overfull \hbox (20.0pt too wide) in paragraph at lines 84--88
 []
  []
 
 ! Undefined control sequence.
-l.88 \subsection
+l.90 \subsection
                 {}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1534,7 +1560,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 A
+l.92 A
       b Adresse 0x1004 steht folgendes im Speciher (hex.) little endian:
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1604,7 +1630,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 \begin{lstlisting}
+l.93 \begin{lstlisting}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1631,7 +1657,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93 \end{lstlisting}
+l.95 \end{lstlisting}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1671,7 +1697,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no z in font nullfont!
 Missing character: There is no ? in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 90--95
+Overfull \hbox (20.0pt too wide) in paragraph at lines 92--97
 []
  []
 
@@ -1682,7 +1708,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \begin{lstlisting}
+l.98 \begin{lstlisting}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1695,7 +1721,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 m
+l.99 m
       ov	r0, #0x1006
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1707,7 +1733,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no , in font nullfont!
 ! You can't use `macro parameter character #' in horizontal mode.
-l.97 mov	r0, #
+l.99 mov	r0, #
               0x1006
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1738,19 +1764,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.99 \end{lstlisting}
-                     
+l.101 \end{lstlisting}
+                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 97--100
+Overfull \hbox (20.0pt too wide) in paragraph at lines 99--102
 []
  []
 
 ! Undefined control sequence.
-l.101 \paragraph
+l.103 \paragraph
                 {Lösung}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1765,7 +1791,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 \paragraph{L
+l.103 \paragraph{L
                   ösung}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1778,7 +1804,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 101--102
+Overfull \hbox (20.0pt too wide) in paragraph at lines 103--104
 [] 
  []
 
