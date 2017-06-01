@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  11 MAY 2017 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.22)  1 JUN 2017 11:18
 entering extended mode
 **./rmp_lernzettel.tex
 (rmp_lernzettel.tex
@@ -528,108 +528,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 65.
 
-LaTeX Warning: Command \^ invalid in math mode on input line 65.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.65 10,2 $\^=
-              $ 1010,00110011 $\approx$ 0,19921875
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.65 10,2 $\^=
-              $ 1010,00110011 $\approx$ 0,19921875
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font cmex10!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.67 \Longrightarrow
-                     Eine Abweichung von  -0,00078125
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.69 \paragraph
-               {Konvertierung von Flie√ükommazahlen Dez zu Bin}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 63--69
 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.70 18,4_
-          {10}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.71 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 \item {
-            18_{10}  \^= 10010_{2}}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.73 \item {18_
-               {10}  \^= 10010_{2}}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-LaTeX Warning: Command \^ invalid in math mode on input line 73.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.73 \item {18_{10}  \^=
-                         10010_{2}}
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.73 \item {18_{10}  \^=
-                         10010_{2}}
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+ []
 
 ! Extra }, or forgotten $.
-l.73 \item {18_{10}  \^= 10010_{2}}
-                                   
+l.73 18$_{10}$  = 10010$_{2}}
+                             $ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.74 0,4$_{10}$ = 0,011$_{2}}
+                             $ \\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -637,169 +556,8 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-! LaTeX Error: Command \item invalid in math mode.
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 \item
-           {0,4_{10} \^= 0,011_{2}}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 \item {
-            0,4_{10} \^= 0,011_{2}}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 \item {
-            0,4_{10} \^= 0,011_{2}}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 \item {
-            0,4_{10} \^= 0,011_{2}}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Command \^ invalid in math mode on input line 74.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.74 \item {0,4_{10} \^=
-                         0,011_{2}}
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.74 \item {0,4_{10} \^=
-                         0,011_{2}}
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Runaway argument?
-! Paragraph ended before \end was complete.
-<to be read again> 
-                   \par 
-l.76 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.76 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-Missing character: There is no Ë in font cmex10!
-Missing character: There is no Ë in font cmex10!
-! Missing number, treated as zero.
-<to be read again> 
-                   |
-l.81     ldr & mov  & F
-                       unktion\\ \hline
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   |
-l.81     ldr & mov  & F
-                       unktion\\ \hline
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Overfull \hbox (49.4337pt too wide) in paragraph at lines 81--81
-[]\T1/cmr/m/n/12 |Funktion| 
- []
-
-! Missing number, treated as zero.
-<to be read again> 
-                   |
-l.82     r1, [r2] & r1, r2 & s
-                              peichere Wert von r2 in r1 \\
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   |
-l.82     r1, [r2] & r1, r2 & s
-                              peichere Wert von r2 in r1 \\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Overfull \hbox (49.66423pt too wide) in paragraph at lines 82--83
-[]\T1/cmr/m/n/12 |speichere
- []
-
-
-Overfull \hbox (25.44795pt too wide) in paragraph at lines 82--83
-\T1/cmr/m/n/12 Wert
- []
-
-
-Overfull \hbox (18.2733pt too wide) in paragraph at lines 82--83
-\T1/cmr/m/n/12 von
- []
-
-
-Overfull \hbox (10.4419pt too wide) in paragraph at lines 82--83
-\T1/cmr/m/n/12 r2
- []
-
-
-Overfull \hbox (9.78926pt too wide) in paragraph at lines 82--83
-\T1/cmr/m/n/12 in
- []
-
-
-Overfull \hbox (10.4419pt too wide) in paragraph at lines 82--83
-\T1/cmr/m/n/12 r1| 
  []
 
 ! You can't use `macro parameter character #' in restricted horizontal mode.
@@ -810,97 +568,9 @@ I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-! Missing number, treated as zero.
-<to be read again> 
-                   |
-l.83     r1, =255 & r1, #255 & s
-                                peichere 255 in r1 \\
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   |
-l.83     r1, =255 & r1, #255 & s
-                                peichere 255 in r1 \\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Overfull \hbox (49.66423pt too wide) in paragraph at lines 83--84
-[]\T1/cmr/m/n/12 |speichere
- []
-
-
-Overfull \hbox (17.6207pt too wide) in paragraph at lines 83--84
-\T1/cmr/m/n/12 255
- []
-
-
-Overfull \hbox (9.78926pt too wide) in paragraph at lines 83--84
-\T1/cmr/m/n/12 in
- []
-
-
-Overfull \hbox (10.4419pt too wide) in paragraph at lines 83--84
-\T1/cmr/m/n/12 r1| 
- []
-
-! Missing number, treated as zero.
-<to be read again> 
-                   |
-l.84 ...gt Speicher/Register & Bewegt Register & -
-                                                   \\
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   |
-l.84 ...gt Speicher/Register & Bewegt Register & -
-                                                   \\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Overfull \hbox (7.17879pt too wide) in paragraph at lines 84--85
-[]\T1/cmr/m/n/12 |-
- []
-
-! Missing number, treated as zero.
-<to be read again> 
-                   |
-l.85     32-Bit & 8-Bit & -
-                            \\
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   |
-l.85     32-Bit & 8-Bit & -
-                            \\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Overfull \hbox (7.17879pt too wide) in paragraph at lines 85--86
-[]\T1/cmr/m/n/12 |-
+Overfull \hbox (1.86034pt too wide) in paragraph at lines 79--88
+ [] 
  []
 
 [1
@@ -916,7 +586,7 @@ LaTeX Font Info:    Try loading font information for T1+cmss on input line 102.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<big-endian_und_little-endian.jpg, id=12, 443.6575pt x 597.23125pt>
+<big-endian_und_little-endian.jpg, id=11, 443.6575pt x 597.23125pt>
 File: big-endian_und_little-endian.jpg Graphic file (type jpg)
 
 <use big-endian_und_little-endian.jpg>
@@ -968,7 +638,6 @@ Overfull \hbox (47.89641pt too wide) in paragraph at lines 123--125
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[2]
 ! You can't use `macro parameter character #' in horizontal mode.
 l.132 mov r1, #
                -10
@@ -977,103 +646,38 @@ I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-[3 <./big-endian_und_little-endian.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 160--164
+[2] (test1.tex [3 <./big-endian_und_little-endian.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
 
  []
 
 
-! Package inputenc Error: Unicode char √\lst@FillFixed@ (U+5A9)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173 √ú 
-         11111 1110
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173 √ú 
-         11111 1110
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
 
-[4]
+[4]) [5] [6] (test2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 47--50
 
-! LaTeX Error: There's no line here to end.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.192 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+
+ []
 
 
-! LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.204                  -
-                        97 = 1001 1111\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.208 -
-       128 + 16 + 8 + 4 + 2 + 1 = -97
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.218 O
-       verflow-Flag:\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 278--281
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
@@ -1084,46 +688,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.284 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 300--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.331 0
+l.100 0
        x10 $\rightarrow$ Hexadezimal $\rightarrow$ 10\\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--335
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
 
  []
 
-[7]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1131,7 +706,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.337 K
+l.106 K
        apitel 7.4.3 Folie 18 $\rightarrow$ Wie werden die Sachen gespeichert?\\
 
 Your command was ignored.
@@ -1139,31 +714,30 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--339
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--356
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--374
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
 [8]
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--143
+
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.377 ....keil.com/support/man/docs/armasm/armasm_
+l.146 ....keil.com/support/man/docs/armasm/armasm_
                                                   dom1361289875065.htm\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.378 ...ww.raspberrypi.org/forums/viewtopic.php?&
+l.147 ...ww.raspberrypi.org/forums/viewtopic.php?&
                                                   t=16528\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1175,65 +749,81 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.379 
+l.148 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (128.71135pt too wide) in paragraph at lines 377--379
+Overfull \hbox (128.71135pt too wide) in paragraph at lines 146--148
  \T1/cmr/bx/n/12 Nach-schla-gen: \T1/cmr/m/n/12 http://www.keil.com/support/man
 /docs/armasm/armasm$[]\OML/cmm/m/it/12 om\OT1/cmr/m/n/12 1361289875065\OML/cmm/
 m/it/12 :htm[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--379
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--390
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 392--394
-
+) [10] (test3.tex
+Overfull \hbox (53.89497pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[9] [10] (rmp_lernzettel.aux)
+
+Overfull \hbox (89.88646pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (65.89215pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (65.89215pt too wide) in paragraph at lines 22--23
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[11]) [12] (rmp_lernzettel.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 73 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 3696 strings out of 493328
- 47921 string characters out of 3139128
- 134368 words of memory out of 3000000
- 7190 multiletter control sequences out of 15000+200000
+ 3703 strings out of 493328
+ 47964 string characters out of 3139118
+ 138368 words of memory out of 3000000
+ 7188 multiletter control sequences out of 15000+200000
  13982 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,36p,242b,1613s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
-en\ec\dpi600\ecbx1440.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\jknappen\ec\dpi600\ecss1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\User\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\User\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\User\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb>
-Output written on rmp_lernzettel.pdf (10 pages, 183690 bytes).
+ 39i,6n,36p,242b,1587s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Thorben\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecbx1440.pk> <C:\Users\Thorben\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecss1000.pk> <C:\Users\Thorben\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Thorben\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Thorben\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Thorbe
+n\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb>
+Output written on rmp_lernzettel.pdf (12 pages, 188062 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
+ 329 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

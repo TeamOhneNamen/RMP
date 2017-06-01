@@ -1,0 +1,105 @@
+% !TEX root = rmp_lernzettel.tex
+
+
+\section{Lösung für Test 1:}
+\subsection{}
+Wie lautet die Hexadezimalzahl zur Binärzahl?
+\paragraph{Lösung}
+\begin{lstlisting}
+1001 1101 1010
+\end{lstlisting}
+\begin{lstlisting}
+   9    D   10 
+\end{lstlisting}
+\subsection{}
+Wie lautet die Binärzahl zur Dezimalzahl 97
+\paragraph{Lösung}
+0110 0001
+\paragraph{Erklärung}
+1*64 + 1*32 + 1*1
+\subsection{} 
+Addieren Die nebenstehende 8-Bit Binärzahlen:\\
+\\
+Ist das Carry-Flag gesetzt:\\
+Ist das Overflow-Flag gesetzt:
+\begin{lstlisting}
+ 0111 1111
++1011 0011 
+\end{lstlisting}
+\paragraph{Lösung}
+\begin{lstlisting}
+   0111 1111
+  +1011 0011
+------------
+U 11111 1110
+------------
+   0011 0010
+\end{lstlisting}
+Carry-Flag: 	ja\\
+Overflow-Flag:	nein\\
+
+\paragraph{Erklärung}
+Das Carry-Flag ist gesetzt dar der hinterste Übertrag auf 1 gesetzt ist.\\
+Das Overflow-Flag ist nicht gesetzt dar der hinterste und der vorhinterste Übertrag in Xor-Verbindung 0 ergibt.\\
+
+\subsection{}
+
+Geben Sie den Dezimalwert zur Hexadezimalzahl 7D an.
+
+\paragraph{Lösung}
+125
+
+\paragraph{Erklärung}
+\begin{lstlisting}
+Hex $\rightarrow$          7 |       D\\
+Bin $\rightarrow$ 0  1  1  1 | 1 1 0 1\\
+Dez $\rightarrow$ / 64 32 16 | 8 4 / 1 = 125\\
+\end{lstlisting}
+
+\subsection{}
+
+Wie lautet die 8-Bit-Zweierkompliment-Darstellung zur Dezimal -97?
+
+\paragraph{Lösung}
+\begin{lstlisting}
+                 -97 = 1001 1111
+Zweierkompliment: 97 = 0110 0001
+\end{lstlisting}
+
+
+\paragraph{Erklärung}
+-128 + 16 + 8 + 4 + 2 + 1 = -97
+
+$\rightarrow$ Zweierkompliment = Binär invertieren + 0000 0001
+
+\subsection{}
+
+Woran erkennt man bei der Subtraktion zweier Vorzeichenbehafteter Zahlen, ob das berechnete Ergebnis falsch ist?
+
+\paragraph{Lösung}
+Overflow-Flag:\\
+=1 $\rightarrow$ flasch\\
+=0 $\rightarrow$ richtig
+
+\paragraph{Erklärung}
+s.o.
+\subsection{}
+Das Datenfeld...
+
+
+\subsection{}
+
+Ab Adresse 0x1004 steht folgendes im Speciher (hex.) little endian:
+\begin{lstlisting}
+14 21 32 A3 A7 F3 FA
+\end{lstlisting}
+Was steht in r1 nach folgender Sequenz?
+
+\begin{lstlisting}
+mov	r0, #0x1006
+ldrh	r1, [r0]
+\end{lstlisting}
+
+\paragraph{Lösung}
+
+

@@ -1,0 +1,191 @@
+% !TEX root = rmp_lernzettel.tex
+
+\section{Lösung für Test 2:}
+\subsection{}
+\begin{lstlisting}
+Bytefeld 	DCB 	11,'B', 0xB, 0b01000010
+\end{lstlisting}
+
+a)
+\begin{lstlisting}
+Bytefeld 	0B, 42, 11, 42
+\end{lstlisting}
+ 
+b)
+\begin{lstlisting}
+ldr r1, =Bytefeld
+ldrb r0, r1 
+\end{lstlisting} 
+ 
+c)
+\begin{lstlisting}
+0x11, B
+\end{lstlisting} 
+
+\subsection{}
+\begin{lstlisting}
+ALIGN 4
+mov r0, 0xAB
+\end{lstlisting} 
+
+\subsection{}
+\begin{lstlisting}
+ldr r0, 0x1256ABCD
+\end{lstlisting} 
+
+\subsection{}
+\begin{lstlisting}
+bgt
+\end{lstlisting} 
+
+\subsection{}
+\begin{lstlisting}
+bgt
+\end{lstlisting} 
+ 
+\subsection{}
+Aufgabe:\\
+Die \textbf{vorzeichenlose} Zahl in r0 soll durch 4 geteilt werden. Das Ergebnis soll in r1 stehen.\\
+Geben Sie den Befehl an:\\
+
+
+\paragraph*{Lösung:}
+
+\begin{lstlisting}
+MOV r0,r1,ASR #2
+\end{lstlisting}
+
+
+\paragraph*{Erklärung:}
+Eine Verschiebeoperation nach \textbf{links} um 1 Bit entspricht der \textbf{Multiplikation} mit 2 \\
+und eine Verschiebeoperation nach \textbf{rechts} um 1 Bit entspricht der \textbf{Division} mit 2. \\
+Warum \# 2 statt 4? \# 1 $\rightarrow$ x $\div$ 2; \# 2 $\rightarrow$ x $\div$ 2 $\div$ 2 $\rightarrow$ x $\div$ 4 
+
+
+\paragraph*{Nachschlagen:}
+Kapitel 8.5.5
+
+\subsection{}
+Aufgabe:\\
+Das Datenfeld Var1 beginne bei Adresse 0x2000. Welcher Wert (hex.) vsteht nach Ausführung des Befehls in r0?\\
+
+\begin{lstlisting}
+Var1 	DCB 	10, 'A', 0xA, '1'
+
+		ldr r0, =Var1
+\end{lstlisting}
+
+\paragraph*{Lösung}
+r0 = 0x2000
+
+\paragraph*{Erklärung:}
+Lade die Adresse von Var1 in r0. 
+
+
+\paragraph*{Nachschlagen:}
+Kapitel 7.5.3
+
+\subsection{}
+Das Datenfeld Tab beginne bei Adresse 0x2000. Geben Sie die Speicherinhalte (hex.) von Adresse 0x2000 - 0x2003 an?\\
+\begin{lstlisting}
+Var1 	DCB 	0x10, 'A', 10, '1'
+\end{lstlisting}
+
+\paragraph*{Lösung}
+0x2000: 41 0A 31 10 \\
+
+
+\paragraph*{Erklärung:}
+0x10 $\rightarrow$ Hexadezimal $\rightarrow$ 10\\
+'A' $\rightarrow$ ASCII $\rightarrow$ 41\\
+10 $\rightarrow$ Hexadezimal $\rightarrow$ A\\
+'1' $\rightarrow$ ASCII $\rightarrow$ 41\\
+
+\paragraph*{Nachschlagen:}\\
+Kapitel 7.4.3 Folie 18 $\rightarrow$ Wie werden die Sachen gespeichert?\\
+Kapitel 6.4 $\rightarrow$ Reihenfolge im Speicher\\
+
+\subsection{}
+Folgendes Datenfeld sei gegeben:
+\begin{lstlisting}
+Var1 	DCD 	0x10, 0xAA12
+\end{lstlisting}
+Geben Sie die Assemblerbefehle an, um das \underline{erste Datenwort} des Feldes Var1 nach r1 zu kopieren
+
+\paragraph*{Lösung:}
+\begin{lstlisting}
+ldr r0, =Var1 ; Arraystartadresse laden 
+ldr r1, [r0] ; Erstes Element des Arrays
+\end{lstlisting}
+\paragraph*{Erklärung:}
+Warum nicht mov?\\
+mov kopiert nur ein Datenwort Syntax: MOV <wohin>, <woher,was> $\rightarrow$ Daten > \\
+Nachschlagen von MOV: Kapitel 6.9.3\\
+\paragraph*{Nachschlagen:}
+Kapitel 7.5.3
+Kapitel 7.7.3
+
+
+\subsection{}
+Was steht in r0 nach folgendem Befehl (hex.)?
+\begin{lstlisting}
+ldr 		r0, =0x1234ABCD
+\end{lstlisting}
+
+
+\paragraph*{Lösung:}
+r0 = 0x1234ABCD
+
+\paragraph*{Erklärung:} 
+Wenn nach '=' ein Hexwert kommt dann speichere den Wert. Wenn Variable, dann speichere die Adresse.\\
+Auch hier würde mov nicht funktionieren, da 0x1234ABCD > 8 Bit\\
+
+
+\paragraph*{Nachschlagen:}
+http://www.keil.com/support/man/docs/armasm/armasm_dom1361289875065.htm\\
+https://www.raspberrypi.org/forums/viewtopic.php?&t=16528\\
+
+\subsection{}
+In welchem Wertebereich muss r0 liegen, damit ein Sprung nach LOOP erfolgt? (dezimal oder hex.)
+\begin{lstlisting}
+mov		r1, #-15
+cmp		r0, r1
+bge		LOOP	;if greater or equal
+\end{lstlisting}
+
+Größer oder gleich:\\
+Kleiner oder gleich:\\
+
+\paragraph*{Lösung:}
+Größer oder gleich: -15\\
+Kleiner oder gleich: 255\\
+
+\paragraph*{Erklärung:}
+greater or equal $\rightarrow$ r1 muss >= -15 
+mov r1 $\rightarrow$ 8-Bit $\rightarrow$ 1 muss <= 255
+
+\paragraph*{Nachschlagen:}
+bge $\rightarrow$ Kapitel 8.3.5
+
+\subsection{}
+Was steht in r0 nach folgender Befehlssequenz (hex.)?
+\begin{lstlisting}
+ldr		r1, =0xFFFFFF87
+mov		r0, #0x78
+and		r0, r1
+\end{lstlisting}
+
+\paragraph*{Lösung:}
+
+\begin{lstlisting}
+r1 1111 1111 1111 1111 1111 1111 1000 0111
+r0 0000 0000 0000 0000 0000 0000 0111 1000
+------------------------------------------
+r0 0000 0000 0000 0000 0000 0000 0000 0000
+\end{lstlisting}
+
+\paragraph*{Erklärung:}
+logisches UND nur wenn gleiche Werte in r1 und r0 stehen $\rightarrow$ 1
+
+\paragraph*{Nachschlagen:}
+Kapitel 8.4.3
