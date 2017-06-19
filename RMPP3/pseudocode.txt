@@ -1,0 +1,41 @@
+Pseudocode
+
+while true do
+
+	schreibe text
+	
+	gedrückt <- nein
+	
+	while gefrückt==nein do
+		
+		if taste==0 do
+			gedrückt = ja
+		
+		end if
+
+	end while	
+
+	Delay 3s
+	
+	"Achtung !!!" anzegen
+	
+	while R0(Balkenlänge)!=15 do
+	
+		if taste==0 do
+			end while
+			
+		end if
+
+		Delay 20ms
+
+		R0(Balkenlänge) + 1
+
+		R0(Balkenlänge) auf den LEDs ausgeben
+		
+	end while
+
+	"Stopped" auf Display schreiben
+
+	Delay 3s
+
+end while
