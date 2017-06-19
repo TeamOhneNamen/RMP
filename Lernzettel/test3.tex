@@ -58,7 +58,7 @@ Kapitel 9.2
 \subsection{}
 \begin{lstlisting}
 push 	{fp, lr}
-mov 	sp, fp
+mov 	fp, sp
 push 	{r1 - r4}	; 8-align -> gerade Anzahl Registern
 pop 	{r1 - r4}	; 8-align -> gerade Anzahl Registern
 pop		{fp, lr}

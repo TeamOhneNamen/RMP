@@ -1,0 +1,77 @@
+% !TEX root = rmp_lernzettel.tex
+
+\section{Lösung für Test 4:}
+
+\subsection{}
+\begin{lstlisting}
+b	StrCmp
+\end{lstlisting}
+\paragraph{} Warum nicht bl? Braucht man das lr nicht?
+\paragraph*{Nachschlagen:}
+
+\subsection{}
+\begin{lstlisting}
+pa	= &a;
+int *pa = &a;
+\end{lstlisting}
+\paragraph*{Nachschlagen:}
+Kapitel 13.13
+
+\subsection{}
+\begin{lstlisting}
+pVek = Vek;
+pVek = (11, 21, 13, 17, 4);
+\end{lstlisting}
+\paragraph*{Nachschlagen:}
+Kapitel 13.13\\
+Kapitel 13.18
+
+\subsection{}
+\begin{lstlisting}
+int var = Vek[3];
+int var = *pVek[3];
+\end{lstlisting}
+\paragraph*{Nachschlagen:}
+Kapitel 13.13
+
+\subsection{}
+\begin{lstlisting}
+printf("%d %d %d", x, &x, px);
+
+-> schreibe 3 Dezimalzahlen:
+	x 		-> Wert von x
+	&x		-> Adresse von x
+	px		-> Adresse auf die px zeigt -> Adresse von x
+	
+10, 2400, 2400
+
+printf("%d %d %d", &px, *px, *ppx);
+
+-> schreibe 3 Dezimalzahlen:
+	&px 	-> Adresse von px
+	*px		-> Wert dessen worauf px zeigt -> Wert von x
+	*ppx	-> Wert dessen worauf ppx zeigt -> Wert von px -> Adresse von x
+	
+2000, 10, 2400
+\end{lstlisting}
+\paragraph*{Nachschlagen:}
+Kapitel 13.13
+
+\subsection{}
+\begin{lstlisting}
+int* api[12];
+
+Array mit der Länge 12 von Pointern, die auf Integer zeigen 
+\end{lstlisting}
+\paragraph*{Nachschlagen:}
+Kapitel 13.20
+
+\subsection{}
+\begin{lstlisting}
+Laenge1 = strlen(sP1);
+
+Laenge2	= strlen(sP2[2]);
+
+Laenge3	= strlen(&*(sP2 + 2);
+\end{lstlisting}
+\paragraph*{Nachschlagen:}

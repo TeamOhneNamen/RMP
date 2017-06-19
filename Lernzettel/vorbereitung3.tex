@@ -1,0 +1,86 @@
+\section{Lösung für die Vorbereitung für Test 3:}
+\subsection{}
+\begin{lstlisting}
+ldr		r0, =V1 	
+ldr	 	r1, =V2 
+\end{lstlisting}
+
+\subsubsection{Nachschlagen:}
+Kapitel 10.2.2.3
+
+\subsection{}
+\begin{lstlisting}
+ldr		r0, 12355  	
+ldr	 	r1, 12  
+\end{lstlisting}
+
+\subsubsection{Nachschlagen:}
+Kapitel 10.2.2.3
+
+\subsection{}
+\begin{lstlisting}
+Aufrufendes Programm
+ldr		r0, =V1 	
+ldr	 	r1, =V2 	 
+push 	{r0, r1}               ; PUSH V1 und V2 
+bl      Binom1  
+add 	sp, #8                 ; Stack korrigieren
+
+Unterprogramm Binom1  
+push   	{fp, lr} 				; PUSH fp , fp_alt retten 
+mov 	fp , sp 				; aktuelle Stackpos. merken 
+push   	{r1-r4}          		; PUSH,  Register retten 
+ldr		r0, =V1 	
+ldr	 	r1, =V2                                
+pop 	{r1-r4}         		; POP,  Register restaurieren 
+pop 	{fp,lr} 				; POP  fp u. lr restaurieren 
+bx 		lr
+\end{lstlisting}
+
+\subsubsection{Nachschlagen:}
+Kapitel 10.2.2.3
+
+\subsection{}
+Das Linkregister speichert die Rücksprungsadresse.
+
+\subsection{}
+\begin{lstlisting}
+TabAdd 
+ldr		r0, Tab1   	
+ldr	 	r1, 4 
+\end{lstlisting}
+
+\subsubsection{Nachschlagen:}
+Kapitel 10.2.2.3
+
+\subsection{}
+\begin{lstlisting}
+Aufrufendes Programm
+ldr		r0, =V1 	
+ldr	 	r1, =V2 	 
+push 	{r0, r1}               ; PUSH V1 und V2 
+bl      Binom1  
+add 	sp, #8                 ; Stack korrigieren
+
+Unterprogramm Binom1  
+push   	{fp, lr} 				; PUSH fp , fp_alt retten 
+mov 	fp , sp 				; aktuelle Stackpos. merken 
+push   	{r1-r4}          		; PUSH,  Register retten 
+ldr 	r2, [fp, #8]            ; [r2] V2 
+ldr 	r1, [fp, #12]           ; [r1] V1                                 
+...
+...
+...
+pop 	{r1-r4}         		; POP,  Register restaurieren 
+pop 	{fp,lr} 				; POP  fp u. lr restaurieren 
+bx 		lr
+\end{lstlisting}
+
+\subsubsection{Nachschlagen:}
+Kapitel 10.2.2.3
+
+\subsection{}
+den Stackpointer zu korrigieren.
+
+\subsubsection{Nachschlagen:}
+Kapitel 10.2.2.3
