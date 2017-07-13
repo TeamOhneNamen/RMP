@@ -33,16 +33,16 @@ Das Einerkomplement
 Das Zweierkomplement
 Die Subtraktion von Dualzahlen
 
-Einerkomplement
+\section*{Einerkomplement}
 
 Was ist das Komplement von Dualzahlen? Man bildet das sogenannte Einerkomplement, indem man jede Zahl durch ihr Gegenteil ersetzt, also die 0 durch die 1 und die 1 durch die 0.\\
 
 01011010 wird zu 10100101\\
 11101101 wird zu 00010010\\
 
-\paragraph{Das Zweierkomplement}
+\section*{Das Zweierkomplement}
 
-Das Zweierkomplement entspricht dem Einerkomplement, nur wird zusätzlich noch 00000001 addiert.
+Das Zweierkomplement entspricht dem Einerkomplement, nur wird zusätzlich noch 1 addiert.
 
 01011010 wird im Einerkomplement zu 10100101 im Zweierkomplement zu 10100110
 11101101 wird im Einerkomplement zu 00010010 im Zweierkomplement zu 00010011
@@ -68,14 +68,14 @@ Sobald es sich wiederholt kann aufgehört werden.\\
 $\Longrightarrow$ Eine Abweichung von  -0,00078125
 \\
 \paragraph{Konvertierung von Fließkommazahlen Dez zu Bin}
-18,4$_{10}$ \\
+18,4 $_{10}$ \\
 
 
-8$_{10}$  = 10010$_{2}}$ \\
-0,4$_{10}$ = 0,011$_{2}}$ \\
+ 8 $_{10}$  = 10010$_{2}}$ \\
+0,4 $_{10}$ = 0,011$_{2}}$ \\
 
 
-\section{mov vs. ldr}
+\section*{mov vs. ldr}
   \begin{tabular}{ l | l | l }
     ldr & mov  & Funktion\\ \hline
     r1, [r2] & r1, r2 & speichere Wert von r2 in r1 \\ 
@@ -84,10 +84,67 @@ $\Longrightarrow$ Eine Abweichung von  -0,00078125
     32-Bit & 8-Bit & - \\
   \end{tabular}
 
+\section*{Die Flags}
+Es existieren 3 Arten von Flags:
+\begin{description}
+\item[C] Carry-Flag
+\item[V] Overflow-Flag
+\item[Z] Zero-Flag
+\end{description}
+Details: Kap. 5 und Kapitel 6.5.2
+
+\paragraph*{Carry-Flag oder Borrow-flag} 
+\subparagraph*{Definition:} Zeigt an, dass die Rechenoperation den verwendeten Zahlenbereich überschreitet. Bei Subtraktion ist das negierte Carry-Flag das \textbf{Borrow-Flag}), dieses zeigt an, dass der Zahlenbereich unterschritten wurde.
+\subparagraph*{Wichtig bei} Addition: Carry = 1 $\rightarrow$ Bereichsüberschreitung $\rightarrow$ Fehler\\
+Subtraktion (oder Addition e. negativen Wertes): Borrow = 1 $\rightarrow$ Bereichsüberschreitung $\rightarrow$ Fehler\\
+\subparagraph*{Beispiel:}
+
+\begin{lstlisting}
+   1111 1110 
+  +1011 1110 
+   ---------
+  11111 110  
+   =========
+   0000 0100
+\end{lstlisting}
+
+\begin{description}
+\item[C] 1 letzter Übertrag = 1
+\item[V] 0 xor letzter und vorletzter Übertrag = 1 xor 1 = 0
+\end{description}
+
+\paragraph*{Negative-Flag}
+\subparagraph*{Definition} Enthält das MSB(das am weitesten links stehende Bit) eines Ergebnisses, d.h. 0 = positives Ergebnis 1 = negatives Ergebnis  .
+\subparagraph*{Wichtig bei} Nur bei \textbf{signed} relevant.
 
 
 
-\paragraph{Die Subtraktion von Dualzahlen}
+\paragraph*{Overflow-Flag}
+\subparagraph*{Definition:} Zeigt an, dass das Vorzeichenbit durch Überlauf verändert wurde (obwohl es eigentlich nicht hätte verändert werden sollen).
+\subparagraph*{Wichtig bei} signed: Wenn gesetzt $\rightarrow$ falsches Ergebnis.
+\subparagraph*{Beispiel:}
+
+\begin{lstlisting}
+   0010 1111 
+  +0101 1001 
+   ---------
+  01111 111  
+   =========
+   0000 0100
+\end{lstlisting}
+
+\begin{description}
+\item[C] 0 letzter Übertrag = 0
+\item[V] 1 xor letzter und vorletzter Übertrag = 0 xor 1 = 1
+\end{description}
+
+
+\paragraph*{Zero-Flag}
+\subparagraph*{Definition} Wird gesetzt, wenn das Ergebnis 0 ist. 
+\subparagraph*{Wichtig bei} 
+
+
+\section*{Die Subtraktion von Dualzahlen}
 
 Der Satz lautet: Die Subtraktion von 2 Zahlen erfolgt durch die Addition des Zweierkomplementes. Als konkretes Beispiel nehmen wir dazu die Rechnung 14-9=5.
 
